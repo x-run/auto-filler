@@ -11,5 +11,8 @@
           "js": ["content.js"]
         }
     ],
-    "permissions": ["storage","activeTab","declarativeContent"]
+    "permissions": ["storage","activeTab","declarativeContent"],
+    "background": {
+      "service_worker": "welcome/background.js"
+    }
   }

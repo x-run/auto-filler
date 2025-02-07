@@ -4,7 +4,8 @@ chrome.runtime.onInstalled.addListener(async () => {
     console.log(`Created tab ${tab.id}`)
 })
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received message:", request); 
-    // 処理をここに記述
-  });
+// document.getElementById('next').addEventListener(() =>{
+//     chrome.tabs.create({url: 'https://www.google.com'});
+    
+// })
+
