@@ -11,8 +11,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Install npm packages
         run: npm ci
-      - name: Zip
-        run: zip -r dist.zip dist
-
-
-      
+      - name: Search
+        run: ls -la
