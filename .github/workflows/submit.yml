@@ -1,9 +1,9 @@
 name: Upload to Chrome Web Store
 on: 
   push:
-  
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - run: echo "this is hello"
