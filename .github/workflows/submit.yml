@@ -6,13 +6,10 @@ on:
       -'*'
 
 
-
-
 jobs:
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: action/checkout@v4
-      - name: Inspect files after checkout
-        run: ls -la
+  # "my_first_job"というジョブIDでジョブを定義
+  my_first_job:
+    name: My first job
+  # "my_second_job"というジョブIDでジョブを定義
+  my_second_job:
+    name: My second job
