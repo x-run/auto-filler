@@ -10,9 +10,9 @@ jobs:
   upload:
     run-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: check current 
-      run: ls -la
-    - name: show current directory 
-      run: pwd
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: check current 
+        run: ls -la
+      - name: show current directory 
+        run: pwd
