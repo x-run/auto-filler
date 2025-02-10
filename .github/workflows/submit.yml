@@ -1,0 +1,16 @@
+name: Upload to Chrome Web Store
+
+on: 
+  push:
+    tags:
+      -'*'
+
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: action/checkout@v4
+      - name: Inspect files after checkout
+        run: ls -la
