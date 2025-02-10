@@ -12,7 +12,7 @@ jobs:
       - name: Install npm packages
         run: npm ci
       - name: Zip
-        run: zip -r dist.zip auto-filler
-        
+        run: zip -r dist.zip ./auto-filler
+
 
       
