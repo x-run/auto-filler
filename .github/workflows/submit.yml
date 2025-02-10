@@ -1,5 +1,7 @@
 name: Upload to Chrome Web Store
-on: [push]
+on: 
+  push:
+  
 jobs:
   check:
     runs-on: ubuntu-latest
