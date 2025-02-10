@@ -3,7 +3,16 @@ on:
   push:
 
 jobs:
-  check:
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is hello"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install npm packages
+        run: npm ci
+      - name: Zip
+        run: zip -r dist.zip auto-filler
+        
+
+      
