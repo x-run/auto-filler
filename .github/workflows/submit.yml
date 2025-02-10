@@ -14,3 +14,5 @@ jobs:
       uses: actions/checkout@v4
     - name: check current 
       run: ls -la
+    - name: show current directory 
+      run: pwd
