@@ -1,5 +1,6 @@
 const zipFolder = require("zip-folder");
-let folderName = "./auto-filler"
+const path = require("path");
+let folderName = path.join(__dirname, '..', 'auto-filler');
 
 let zipName = "extension.zip"
 
