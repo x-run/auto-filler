@@ -1,7 +1,15 @@
-name: learn-github-actions
+name: Deploy to Chrome Web Store
 on: [push]
 jobs:
-  check-bats-version:
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: npm ci
+
+      - name: Zip 
+        uses: zip -r dist.zip dist
