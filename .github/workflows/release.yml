@@ -9,5 +9,6 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: ls -la
       - run: node deploy.js
       - run: ls -la
