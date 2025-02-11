@@ -4,12 +4,10 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Build
-        run: npm ci
-
-      - name: Zip 
-        uses: zip -r dist.zip dist
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: node deploy.js
+      - run: ls -la
