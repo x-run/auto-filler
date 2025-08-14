@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         try {
 
-            //名前フィールドの設定
+            //名前フィールドの設定a
             if (!setFieldValue('input[name*="name"]', request.fullName)){
                 setFieldValue('input[name*="名前"]', request.fullName)
             }
